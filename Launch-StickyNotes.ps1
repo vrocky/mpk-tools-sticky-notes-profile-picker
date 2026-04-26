@@ -2,7 +2,7 @@
 <#
 .SYNOPSIS
     Opens StickyNotesApp with an isolated profile for the current virtual desktop.
-    Profile dirs: C:\StickyNotesProfiles\profiles\virtual_desktop_[N]\
+    Profile dirs: C:\profiles_store\StickyNotesProfiles\profiles\virtual_desktop_[N]\
 
 .EXAMPLE
     .\Launch-StickyNotes.ps1
@@ -13,7 +13,7 @@ param(
 )
 
 $StickyNotesExe = "C:\Program Files\StickyNotesApp\StickyNotesApp.exe"
-$ProfilesRoot   = "C:\StickyNotesProfiles"
+$ProfilesRoot   = "C:\profiles_store\StickyNotesProfiles"
 
 # ── Get current virtual desktop number ───────────────────────────────────────
 function Get-CurrentDesktopNumber {

@@ -22,7 +22,7 @@ public static class StickyNotesSettingsService
 
             return new StickyNotesSettings
             {
-                DataDirectory = string.IsNullOrWhiteSpace(dataDir) ? @"C:\StickyNotesProfiles" : dataDir,
+                DataDirectory = string.IsNullOrWhiteSpace(dataDir) ? @"C:\profiles_store\StickyNotesProfiles" : dataDir,
                 StickyNotesExePath = string.IsNullOrWhiteSpace(exePath) ? @"C:\Program Files\StickyNotesApp\StickyNotesApp.exe" : exePath
             };
         }
